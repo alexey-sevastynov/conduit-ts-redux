@@ -11,7 +11,7 @@ const ArticleList: React.FC<ArticleListProps> = ({ list }) => {
   return (
     <div className="w-3/4">
       {list.map((article) => (
-        <Article key={article.title} />
+        <Article key={article.title} {...article} />
       ))}
     </div>
   );
