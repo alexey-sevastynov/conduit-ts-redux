@@ -5,6 +5,7 @@ import ava from "../../assets/image/avatar.png";
 import FavoriteButton from "../favorite-button/FavoriteButton";
 import TagList from "../tag-list/TagList";
 import { FeedArticle } from "../../api/dto/global-feed.in";
+import { DateTime } from "luxon";
 
 interface ArticleProps extends FeedArticle {}
 
@@ -37,7 +38,7 @@ const Article: React.FC<ArticleProps> = ({
               {author.username}
             </Link>
             <span className="text-grey text-xs text-date">
-              9 0ctober, {createdAt}
+              {DateTime.fromISO(createdAt).toLocaleString(DateTime.DATE_FULL)}
             </span>
           </div>
           <FavoriteButton count={favoritesCount} />
