@@ -5,11 +5,7 @@ type ContainerProps = {
 };
 
 const Container: React.FC<ContainerProps> = ({ children }) => {
-  return (
-    <div max-w-screen-lg mx-auto>
-      {children}
-    </div>
-  );
+  return <div className="max-w-screen-lg mx-auto">{children}</div>;
 };
 
 export default Container;
