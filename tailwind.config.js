@@ -5,6 +5,11 @@ module.exports = {
     extend: {
       colors: {
         green: "#5CB85C",
+        darkGreen: "#3d8b3d",
+        grey: "#bbb",
+      },
+      animation: {
+        animation: "all 3s ease infinite",
       },
     },
   },

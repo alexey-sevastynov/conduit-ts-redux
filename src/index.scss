@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-green;
+
+    &:hover {
+      @apply text-darkGreen;
+      @apply underline;
+    }
+  }
+}

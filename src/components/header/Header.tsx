@@ -11,7 +11,10 @@ const Header: React.FC<HeaderProps> = () => {
     isActive: boolean;
   };
   const navLinkClasses = ({ isActive }: navLinkClassesProps) =>
-    clsx("py-2", { "text-black/30 ": !isActive, "text-black/80 ": isActive });
+    clsx("py-2", {
+      "text-black/30 hover:text-black/60 hover:no-underline": !isActive,
+      "text-black/80 ": isActive,
+    });
 
   return (
     <header>
