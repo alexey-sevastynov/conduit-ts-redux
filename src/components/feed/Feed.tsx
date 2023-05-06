@@ -1,13 +1,14 @@
 import React from "react";
 import Container from "../container/Container";
 import ArticleList from "../article-list/ArticleList";
+import FeedToggle from "../feed-toggle/FeedToggle";
 
 type FeedProps = {};
 
 const Feed: React.FC<FeedProps> = () => {
   return (
     <Container>
-      Feed
+      <FeedToggle />
       <div className="flex">
         <ArticleList />
         <div className="w-1/4">

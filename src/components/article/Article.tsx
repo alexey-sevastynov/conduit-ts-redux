@@ -11,7 +11,7 @@ const Article: React.FC<ArticleProps> = () => {
   return (
     <article>
       <div className="border-t border-black/10 ">
-        <div className="mb-4 font-light inline-flex">
+        <div className="mb-4 mt-6 font-light inline-flex">
           <Link to="/nokwin">
             <img
               src={ava}
